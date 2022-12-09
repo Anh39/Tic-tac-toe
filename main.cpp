@@ -249,25 +249,28 @@ void endGame(State game)
 int main()
 {
     State g(size,vector<char> (size,' '));
-    /*g[0][0]=' ';g[0][1]=' ';g[0][2]=' '; // check
-    g[1][0]=' ';g[1][1]=' ';g[1][2]=' ';
-    g[2][0]=' ';g[2][1]=' ';g[2][2]=' ';*/
-    //render (machineTurn(g)); //check render()
+    /*g[0][0]='X';g[0][1]=' ';g[0][2]=' '; // check
+    g[1][0]=' ';g[1][1]='X';g[1][2]=' ';
+    g[2][0]=' ';g[2][1]='O';g[2][2]=' ';
+    render (g); //check render()*/
 
-    //cout << nextPlayer(g); // check nextPlayer()
+    //cout << nextPlayer(g) << endl; // check nextPlayer()
+
+    //cout << isFinalState(g) << endl;
 
     //cout << finalStateScore(g) << endl;  //check finalStateScore()
 
     //cout << winner(g) << endl; //check winner()
 
     /*vector <State> States=getStates(g);  //check getStates()
-    cout << "start" << endl;
-    for (int i=0;i<3;i++)
+    for (int i=0;i<8;i++)
     {
         render(States[i]);
         cout<< getScore(g).first << endl;  //check getScore()
     }*/
     //render(getScore(g).second);
+    //g=machineTurn(g);
+    //render (g);
     cout << "Let's start." << endl;
     render(g);
     loop:
