@@ -1,34 +1,3 @@
-/*
-filename: main.cpp
-concept: play tic tac toe (3x3)
-
-Version 1
-1.AI engine
-    +state representation : vector<vector<char>> (3x3)
-	+checking if game is end
-	+detect winner/draw if game end
-        +check current player
-	+render (text screen)
-	+valid moves
-		+detect next player
-		+calculate valid moves
-	+calculate state score
-		+final state score
-		+not-final state score
-        +calculate best move
-    +machine play
-
-2.User interface
-
-    +asking player chose X or O
-	+input move coordinate
-	+response if illegal move
-	+response game result when end
-	+print current game
-	+print machine's move
-
-*/
-
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -299,7 +268,6 @@ int main()
         cout<< getScore(g).first << endl;  //check getScore()
     }*/
     //render(getScore(g).second);
-    char conti='Y';
     cout << "Let's start." << endl;
     render(g);
     loop:
